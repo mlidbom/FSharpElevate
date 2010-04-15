@@ -1,0 +1,16 @@
+bin
+obj
+test-results
+
+*.cache
+*.suo
+*.user
+*TraceLog.xml
+*.resharper
+TestResult.xml
+*.VisualState.xml
+
+*.pidb
+*.userprefs
+~$*.pptx
+.~lock.*
