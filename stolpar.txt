@@ -1,0 +1,14 @@
+Functional vs Imperative 
+	How vs What (unfiltered -> printMatching isSomeThing)
+	
+	even with CQS you need one method for each printMatching isSomeThing combination 
+
+Code that resembles how you think about the problem.
+	Rules ? Results (Pattern matching)
+
+	Data abstraction
+		Limited Known Cases mostly structural meaning ? Discriminated unions
+		Unlimited cases ? Classes
+		Single small datatype ? Record	
+
+	Linear stream-style code vs nested vs temporary variables
