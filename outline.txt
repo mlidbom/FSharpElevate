@@ -22,11 +22,6 @@ Functional programming
 	Code that resembles how you think about the problem.
 		Rules ? Results (Pattern matching)
 
-		Data abstraction
-			Limited Known Cases mostly structural meaning ? Discriminated unions
-			Unlimited cases ? Classes
-			Single small datatype ? Record	
-
 		Linear stream-style code vs nested vs temporary variables
 	
 	Importance of multithreading
@@ -78,11 +73,16 @@ F#
 		
 	Async workflows
 		
-	Automatic Generics and type inferences		
-	Discriminated unions 
-		(Excellent for when you know all possible cases. Sacrifices ease of extension in the datastructure dimension in deferrence to great ease of extension in the algorithmic dimension )
-		When was the last time you added an abstract method to the base class of an inheritance hierarchy? Was it fun? I doubt it.
-	Records		
+	Automatic Generics and type inference
+	
+	Data abstraction
+		Limited Known Cases mostly structural meaning ? Discriminated unions
+			(Excellent for when you know all possible cases. Sacrifices ease of extension in the datastructure dimension in deferrence to great ease of extension in the algorithmic dimension )
+		Unlimited cases ? Classes
+		Single small datatype ? Record
+		
+		These can all have member functions!
+	
 	Pattern matching
 	
 	Lists 		
