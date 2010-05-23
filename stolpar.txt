@@ -1,14 +1,89 @@
+Preamble 
+	//Wont talk very much about how F# supports OO except to say that F# fully supports OO and since everyone here should be familiar with OO I will concentrate on FP
+
 Functional vs Imperative 
 	How vs What (unfiltered -> printMatching isSomeThing)
 	
 	even with CQS you need one method for each printMatching isSomeThing combination 
+	
+Functional vs Object oriented
+	There is no fundamental clash!
+	Do both.
 
-Code that resembles how you think about the problem.
-	Rules ? Results (Pattern matching)
+Functional programming 
+	Immutability
+		Values vs Varibles
+	Pure Functions(CQS)
+	First class functions (Free manipulation much like data in OO languages. Data and code is not as different as most think) 
+	Higher Order Functions
+	First class functions
+	Closures
+	
+	Code that resembles how you think about the problem.
+		Rules ? Results (Pattern matching)
 
-	Data abstraction
-		Limited Known Cases mostly structural meaning ? Discriminated unions
-		Unlimited cases ? Classes
-		Single small datatype ? Record	
+		Data abstraction
+			Limited Known Cases mostly structural meaning ? Discriminated unions
+			Unlimited cases ? Classes
+			Single small datatype ? Record	
 
-	Linear stream-style code vs nested vs temporary variables
+		Linear stream-style code vs nested vs temporary variables
+	
+	Importance of multithreading
+		The MHz race is over. More's law has gone horizontal. 
+		Mainstream processors now have 4 cores 8 hardware threads
+		Soon single threaded applications will have only a small fraction of the performance of multithreaded applications
+		
+		Importance of fp in the context of multithreading
+			Shared state is the enemy of multithreading
+				Locking(Runaway complexity, Deadlocks)
+				FP is immune due to immutability. The problem simply does not exist
+			Step by step instructions are the enemy of multithreading 
+				cannot be arbitrarily rearranged to execute differently with guaranteed to be identical semantics
+				A declarative specification can. (SQL, Linq)
+	
+	Why has functional programming not become more popular?
+		Performance of ducktyping
+		Framework / Library support
+		Tools/IDE support
+		Interoperability
+		Cost of thinking FP may historically have been(Or at least appeared to have been.) greater than the benefit for the relatively small simple single threaded systems
+		Lack of multiparadigm thinking
+			Composability
+				Multiple dimensions of problems and solutions.
+				OO -> Composable datastructures
+				Functional programming -> Composable algorithm
+				Generics -> 
+					Gives us the ability to write abstractions that do not know which type they will be used with
+					Gives us much of the benefits of a duck typing without the loss of type safety and tool support		
+			F#! ->
+					
+F#
+	Fully supported language joining C# and VB.Net in the club
+	Solves many historical problems for FP not gaining ground
+		Full access to .Net framework
+		Same performance potential as any other .Net language.
+			(Unless you consider multithreading of course)	
+		Tool support via visual studio. 
+		Complete merge/symbiosis of Functional Programming, OO, and Generics
+	
+	
+	Tuples 	(For quick prototyping and returning more than one value. NOT a replacement for datatypes that carry meaning)
+	
+	Functions and Lambdas
+		Declarative form of a function
+		Declarative form of lambda
+		Equivalence of Curried function and function that returns function
+			There are no functions that take more than one parameter in any language!
+		
+	Async workflows
+		
+	Automatic Generics and type inferences		
+	Discriminated unions 
+		(Excellent for when you know all possible cases. Sacrifices ease of extension in the datastructure dimension in deferrence to great ease of extension in the algorithmic dimension )
+		When was the last time you added an abstract method to the base class of an inheritance hierarchy? Was it fun? I doubt it.
+	Records		
+	Pattern matching
+	
+	Lists 		
+	
