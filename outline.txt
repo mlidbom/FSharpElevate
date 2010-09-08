@@ -1,6 +1,22 @@
 Preamble 
 	//Wont talk very much about how F# supports OO except to say that F# fully supports OO and since everyone here should be familiar with OO I will concentrate on FP
 
+Functional programming history
+	Had things like linq in the sixties
+
+Basics of functional programming
+	Immutability
+	Pure functions
+	Higher order functions 
+	Function composition
+	Closures
+
+Tie in with SOLID and design principles 
+	OO → Composability for datastructures
+	FP → Composability for algorithm
+	Generics → Retain composability in the face of unknown types	
+	F# has it all with a very concise syntax that negates much of the complexity usually added when using generics!
+
 Functional vs Imperative 
 	How vs What (unfiltered -> printMatching isSomeThing)
 	
