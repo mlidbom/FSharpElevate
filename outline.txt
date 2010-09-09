@@ -62,6 +62,13 @@ F#
 		Tool support via visual studio. 
 		Complete merge/symbiosis of Functional Programming, OO, and Generics
 	
+	Whitespace matters
+	
+	F# interactive
+	
+	Type inference
+	
+	Unit 
 	
 	Tuples 	(For quick prototyping and returning more than one value. NOT a replacement for datatypes that carry meaning)
 	
@@ -71,7 +78,7 @@ F#
 		Equivalence of Curried function and function that returns function
 			There are no functions that take more than one parameter in any language!
 		
-	Async workflows
+	Asynchronous workflows
 		
 	Automatic Generics and type inference
 	
