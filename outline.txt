@@ -10,6 +10,7 @@ Basics of functional programming
 	Higher order functions 
 	Function composition
 	Closures
+	Recursion
 
 Tie in with SOLID and design principles 
 	OO → Composability for datastructures
