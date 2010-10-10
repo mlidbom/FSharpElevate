@@ -1,12 +1,13 @@
-﻿let bounce x = x
-let lBounce = fun x -> x
+﻿let add a b = a + b
+//let add = fun a -> fun b -> a + b
 
-let tuple2 a b = (a, b)
-let lTuple2 = fun a -> fun b -> (a, b)
+//Curried function add1 adds 1 to its argument
+let add1 = add 1
+let two = add1 1
 
-let tuple3 a b c = (a, b, c)
-let lTuple3 = fun a -> fun b -> fun c -> (a, b, c)
+//Curried function add1 adds 1 to its argument
+let add2 = add 2 
+let three = add2 1
 
-
-
+//Currying also called Partial Application
 

@@ -44,12 +44,15 @@
   <ItemGroup>
     <None Include="ValuesDeclarationsTypeInference.fsx" />
     <None Include="Functions.fsx" />
+    <None Include="Lambdas.fsx" />
+    <None Include="Currying.fsx" />
     <None Include="AutomaticGeneralization.fsx" />
     <None Include="Tuples.fsx" />
-    <None Include="Lambdas.fsx" />
+    <None Include="PatternMatchingTuples.fsx" />
+    <None Include="DiscriminatedUnions.fsx" />
+    <None Include="DiscriminatedUnionMembersPatternmatching.fsx" />
+    <None Include="Records.fsx" />
     <None Include="AutomaticValueEqualsAndHashCode.fsx" />
-    <None Include="Currying.fsx" />
-    <None Include="DescriminatedUnions.fsx" />
     <None Include="FunctionsAndLamdas.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
