@@ -13,4 +13,5 @@ TestResult.xml
 *.pidb
 *.userprefs
 ~$*.pptx
+~$*.ods
 .~lock.*

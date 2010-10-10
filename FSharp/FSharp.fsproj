@@ -42,8 +42,13 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Tuples.fsx" />
+    <None Include="ValuesDeclarationsTypeInference.fsx" />
     <None Include="Functions.fsx" />
+    <None Include="AutomaticGeneralization.fsx" />
+    <None Include="Tuples.fsx" />
+    <None Include="Lambdas.fsx" />
+    <None Include="AutomaticValueEqualsAndHashCode.fsx" />
+    <None Include="Currying.fsx" />
     <None Include="DescriminatedUnions.fsx" />
     <None Include="FunctionsAndLamdas.fsx" />
   </ItemGroup>

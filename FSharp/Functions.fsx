@@ -1,8 +1,5 @@
 ﻿//No parenthesis for function declaration
 //Last row is returned value
-//No types written
-//Generic
-//Fully type safe
 let bounce x = x
 
 //No parenthesis for calls. 
