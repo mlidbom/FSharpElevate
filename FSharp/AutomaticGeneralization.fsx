@@ -17,3 +17,7 @@ let oneDotOne = bounce 1.1
 //
 //Damn that feels noisy
 //when getting used to F# syntax
+
+//type annotations can be used when inference fails
+let bounceInt (x:int) = x
+
