@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Tuples.fsx" />
+    <None Include="Functions.fsx" />
     <None Include="DescriminatedUnions.fsx" />
     <None Include="FunctionsAndLamdas.fsx" />
   </ItemGroup>
