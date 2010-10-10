@@ -1,5 +1,4 @@
-﻿//Black jack now...
-type Suit = 
+﻿type Suit = 
     | Spades
     | Hearts    
     | Diamonds
@@ -10,7 +9,9 @@ type Card =
     | King of Suit
     | Queen of Suit
     | Jack of Suit
-    | ValueCard of Suit * int
+    | ValueCard of Suit * int 
+    // Combining types 
+    //of keyword
 
     //Static member
     static member value this = 
