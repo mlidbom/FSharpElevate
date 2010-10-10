@@ -4,6 +4,7 @@ open System.IO
 open System.Net
 open Microsoft.FSharp.Control.CommonExtensions 
 
+//Extension method...
 type System.Net.WebRequest with
   member x.GetResponseAsync() =
     Async.FromBeginEnd(x.BeginGetResponse, x.EndGetResponse)
@@ -18,16 +19,7 @@ let getHtml (url:string) =
             
 let url = "http://www.sunet.se"
 
-let nonAsync() = 
-    let url1 = getHtml url |> Async.RunSynchronously
-    let url2 = getHtml url |> Async.RunSynchronously
-    let url3 = getHtml url |> Async.RunSynchronously
-    let url4 = getHtml url |> Async.RunSynchronously
-    let url5 = getHtml url |> Async.RunSynchronously
-    let url6 = getHtml url |> Async.RunSynchronously
-    ()
-
-let async() = 
+let downloadUrls() = 
     async{
         let! url1 = getHtml url
         let! url2 = getHtml url
@@ -36,8 +28,7 @@ let async() =
         let! url5 = getHtml url
         let! url6 = getHtml url
         return ()
-    } |> Async.Parallel |> Async.RunSynchronously
+    } |> Async.RunSynchronously
 
-nonAsync()
-async()
+downloadUrls()
 

@@ -4,3 +4,5 @@
 //Declaration not assignment
 //Value not variable
 let one = 1
+
+let intType = one.GetType()

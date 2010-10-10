@@ -60,8 +60,9 @@
     <None Include="Threading.fsx" />
     <None Include="Option.fsx" />
     <None Include="ActivePatterns.fsx" />
+    <None Include="Events.fsx" />
     <None Include="FunctionsAndLamdas.fsx" />
-    <None Include="blah.fsx" />
+    <None Include="ExtensionMethodsAsyncWorkflow.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
