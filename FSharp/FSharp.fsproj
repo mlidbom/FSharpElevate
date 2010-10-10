@@ -55,6 +55,8 @@
     <None Include="PipeForwardOperator.fsx" />
     <None Include="FunctionCompositionOperators.fsx" />
     <None Include="PuttingOperatorsToUse.fsx" />
+    <None Include="UnitsOfMeasure.fsx" />
+    <None Include="UnitsOfMeasureWithMembers.fsx" />
     <None Include="Threading.fsx" />
     <None Include="Option.fsx" />
     <None Include="ActivePatterns.fsx" />

@@ -5,12 +5,17 @@ type Part =
     | Widget of float
     | Sprocket of string * int
 
+//Single case active pattern converts input
+//Attributes return the element's attributes...
+let (|Attributes|) (inp : XmlNode) = inp.Attributes
+
+//Partial case active pattern returns an option type to determine match
+//Elem returns matching XmlNode instances
 let (|Elem|_|) name (inp:XmlNode) = 
     if inp.Name = name then Some(inp)
     else None
 
-let (|Attributes|) (inp : XmlNode) = inp.Attributes
-
+//extracts the value from an attribute
 let (|Attr|) attrName (inp: XmlAttributeCollection) = 
     match inp.GetNamedItem(attrName) with
     | null -> failwithf "Attribute %s not found" attrName
