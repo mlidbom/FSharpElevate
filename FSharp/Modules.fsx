@@ -1,11 +1,17 @@
-﻿module MyStuff=
+﻿//Modules can contain
+//Types
+//Value
+//Other modules
+module MyStuff =
     let square x = x * x
     let cube x = x * x * x
 
-    let One = 1
+    module Nested =
+        let One = 1
 
 
 let twentySever = MyStuff.cube 3
-let one = MyStuff.One
+let one = MyStuff.Nested.One
+
 
 

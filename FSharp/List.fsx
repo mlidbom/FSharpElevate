@@ -1,4 +1,6 @@
-﻿
+﻿//F# functional collection types
+
+
 //declaration
 let oneThroughFive = [1;2;3;4;5]
 
@@ -34,3 +36,11 @@ let squares = [for i in [1..10] do yield i * i]
 let squares2 = [for i in [1..10] -> i * i]
 
 //List module
+
+let small = List.filter (fun x -> x < 5) [1..10]
+let squares3 = List.map (fun x -> x * x) [1..10]
+//Lots and lots more functionality
+
+
+//Seq == IEnumerable<T>
+let small2 = Seq.filter (fun x -> x < 4) [1..9]
