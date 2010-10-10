@@ -51,6 +51,7 @@
     <None Include="PatternMatchingTuples.fsx" />
     <None Include="DiscriminatedUnions.fsx" />
     <None Include="DiscriminatedUnionMembersPatternmatching.fsx" />
+    <None Include="RecordMembers.fsx" />
     <None Include="Records.fsx" />
     <None Include="AutomaticValueEqualsAndHashCode.fsx" />
     <None Include="FunctionsAndLamdas.fsx" />
