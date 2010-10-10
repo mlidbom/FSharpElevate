@@ -14,7 +14,7 @@ let describePerson person =
     | {Forename = "Magnus"; Surname = "Lidbom"} -> "Me"
     | {Forename = "Lars"; Surname = "Lidbom"} -> "Pops"
     | {Forename = foreName; Surname ="Lidbom"} -> sprintf "Some relative named %s" foreName
-    | unknownDude -> sprintf "%s %s" unknownDude.Forename unknownDude.Surname
+    | x -> sprintf "%s %s" x.Forename x.Surname
 
 let someDude = describePerson {Forename = "Joe"; Surname = "Doe" }
 let someRelative = describePerson {Forename = "Joe"; Surname = "Lidbom" }

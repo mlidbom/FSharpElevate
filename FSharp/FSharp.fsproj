@@ -34,13 +34,8 @@
     <PlatformTarget>x86</PlatformTarget>
     <DocumentationFile>bin\Release\FSharp.XML</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
     <None Include="ValuesDeclarationsTypeInference.fsx" />
     <None Include="Functions.fsx" />
@@ -49,15 +44,26 @@
     <None Include="AutomaticGeneralization.fsx" />
     <None Include="Tuples.fsx" />
     <None Include="PatternMatchingTuples.fsx" />
+    <None Include="Modules.fsx" />
+    <None Include="List.fsx" />
+    <None Include="Option.fsx" />
     <None Include="DiscriminatedUnions.fsx" />
     <None Include="DiscriminatedUnionMembersPatternmatching.fsx" />
-    <None Include="RecordMembers.fsx" />
     <None Include="Records.fsx" />
+    <None Include="RecordMembers.fsx" />
     <None Include="AutomaticValueEqualsAndHashCode.fsx" />
+    <None Include="Threading.fsx" />
+    <None Include="ActivePatterns.fsx" />
     <None Include="FunctionsAndLamdas.fsx" />
+    <None Include="blah.fsx" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
-  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.
 	<Target Name="BeforeBuild">
