@@ -1,5 +1,18 @@
 ﻿//F# functional collection types
+//Immutable
+//Array the exception
 
+
+//the list data type is an immutable singly linked list
+//looking something like this...
+type myList<'a> = 
+    | Cons of 'a * myList<'a>
+    | Nil
+//Note the recursion!
+
+//Combined with the List module and a 
+//number of operators you get plenty of power
+//From this very simple type
 
 //declaration
 let oneThroughFive = [1;2;3;4;5]

@@ -2,6 +2,7 @@
 //let add = fun a -> fun b -> a + b
 
 //Curried function add1 adds 1 to its argument
+//Note type of add1
 let add1 = add 1
 let two = add1 1
 
