@@ -61,7 +61,8 @@
     <None Include="Option.fsx" />
     <None Include="ActivePatterns.fsx" />
     <None Include="Events.fsx" />
-    <None Include="FunctionsAndLamdas.fsx" />
+    <None Include="Classes.fsx" />
+    <None Include="ExtensionEverything.fsx" />
     <None Include="ExtensionMethodsAsyncWorkflow.fsx" />
   </ItemGroup>
   <ItemGroup>
