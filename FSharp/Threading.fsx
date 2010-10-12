@@ -10,6 +10,16 @@ let primesBelow x = seq{3..x} |> Seq.filter isPrime |> Seq.length
 let threadedPrimesBelow x = seq{3..x} |> PSeq.filter isPrime |> PSeq.length
 
 
-//#time;;
-let single = primesBelow 20000  
-let threaded = threadedPrimesBelow 20000
+//Util method to do timings:
+open System.Diagnostics
+let time f x =     
+    let watch = new Stopwatch()
+    watch.Start()
+    let result = f x
+    result, watch.ElapsedMilliseconds
+
+for i in 1..4 do
+    let single, singleTime = time primesBelow 20000  
+    let threaded, threadedTime = time threadedPrimesBelow 20000    
+    let factor = double singleTime / double threadedTime
+    printfn "Threaded version %f times faster than single threaded version" factor
